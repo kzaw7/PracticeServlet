@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<div class="submission">
+<h4> Welcome to Expense Reimbursement System</h4>
+    <form action="Controller.LoginServlet" method="GET">
+    Username: <input type="text" name="username"/><br/>
+    Password: <input type="password" name="password"/><br/>
+    Type:<select name="normal" id="select">
+    <option value="normal">Employee</option><br/>
+    <option value="manager">Manager</option><br/>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label><br/>
+    <button type="submit">Login</button>
+    </select>
+</form>
+</div>
+</center>
+</body>
+</html>
+

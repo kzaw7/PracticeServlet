@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Pending Request</title>
+</head>
+<body>
+<div class="nav-bar">
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <form name="logoutForm" method="post" action="Controller.LogoutServlet">
+            <a href ="Controller.LogoutServlet" method="post" lass="nav-link" href="#">Log Out</a>
+                </form>
+        </li>
+    </ul>
+</div>
+<h3> Reimbursement</h3>
+<h4> Employee </h4>
+<form name="RequestForm" method="get" action="Controller.EmployeeRequestServlet">
+    <input type="submit" value="Request Reimbursement" />
+</form>
+
+<form name="pendingForm" method="post" action="Controller.EmployeePendingServlet">
+    <input type="submit" value="Employee Pending Request" />
+</form>
+
+<section class="content">
+    <table class= "table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Date of Submission</th>
+            <th>Edit/Update</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </thead>
+    </table>
+</section>
+<form name="profile" method="post" action="Controller.ProfileServlet">
+    <input type="submit" value="Home" />
+</form>
+</body>
+</html>

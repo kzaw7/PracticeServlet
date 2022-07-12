@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Pending Request</title>
+</head>
+<body>
+<center>
+<h3>View User Information</h3>
+<table border="1px">
+    <tr>
+        <th>ID</th>
+        <th>User Name</th>
+        <th>Password</th>
+        <th>Type</th>
+
+    </tr>
+    <tr>
+        <td><%= user.getId()%></td>
+        <td><%= user.getUserName()%></td>
+        <td><%= user.getPassword()%></td>
+        <td><%= user.getType()%></td>
+    </tr>
+</table>
+<form name="RequestForm" method="GET" action="Controller.UserServlet">
+    <input type="submit" value="Request Reimbursement" />
+</form>
+
+
+
+<div class="nav-bar">
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <form name="logoutForm" method="post" action="Controller.LogoutServlet">
+                <a href ="Controller.LogoutServlet" class="nav-link" >Log Out</a>
+            </form>
+        </li>
+    </ul>
+</div>
+<h3> Reimbursement</h3>
+<h4> Employee </h4>
+</center>
+</body>
+</html>

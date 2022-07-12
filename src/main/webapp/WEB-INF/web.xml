@@ -1,0 +1,56 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>Controller.EmployeePendingServlet</servlet-name>
+    <servlet-class>Controller.EmployeePendingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Controller.EmployeePendingServlet</servlet-name>
+    <url-pattern>/Controller.EmployeePendingServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Controller.EmployeeRequestServlet</servlet-name>
+    <servlet-class>Controller.EmployeeRequestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Controller.EmployeeRequestServlet</servlet-name>
+    <url-pattern>/Controller.EmployeeRequestServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Controller.LoginServlet</servlet-name>
+    <servlet-class>Controller.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Controller.LoginServlet</servlet-name>
+    <url-pattern>/Controller.LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>Controller.LogoutServlet</servlet-name>
+  <servlet-class>Controller.LogoutServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Controller.LogoutServlet</servlet-name>
+<url-pattern>/Controller.LogoutServlet</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>Controller.ProfileServlet</servlet-name>
+    <servlet-class>Controller.ProfileServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Controller.ProfileServlet</servlet-name>
+    <url-pattern>/Controller.ProfileServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
